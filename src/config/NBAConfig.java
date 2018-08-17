@@ -5,15 +5,18 @@ import com.pan.framework.util.XMLKit;
 
 /**
  * @author Pan
- *
  */
 public class NBAConfig {
     public static int startNum = 0;
     public static int endNum = 0;
-    public static String url = "no url";
-    public static String elementCommonId = "no elementCommonId";
+    public static String url = XMLKit.getText("url");
+    public static String elementCommonId = XMLKit.getText("elementCommonId");
 
     public static int cpuCore = 0;
+
+    public static String filePath = XMLKit.getText("filePath");
+    public static String fileName = XMLKit.getText("fileName");
+    public static String fileExt = XMLKit.getText("fileExt");
 
     static {
         String firstNum = XMLKit.getText("startNum");
@@ -24,9 +27,6 @@ public class NBAConfig {
         if (NumberKit.isPositiveInteger(lastNum)) {
             endNum = Integer.parseInt(lastNum);
         }
-        url = XMLKit.getText("url");
-        elementCommonId = XMLKit.getText("elementCommonId");
-
         if (NumberKit.isPositiveInteger(XMLKit.getText("cpuCore"))) {
             cpuCore = Integer.parseInt(XMLKit.getText("cpuCore"));
         }

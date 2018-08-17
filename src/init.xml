@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<url>http://115.29.150.27/weixin/Attribute.jsp?Config=new&amp;Value=</url>
+	<url>http://2kolzs.com/weixin/Attribute.jsp?Config=new&amp;Value=</url>
 	<elementCommonId>Span</elementCommonId>
 	<startNum>700</startNum>
-	<endNum>2000</endNum>
+	<endNum>1700</endNum>
 	
-	<cpuCore>2</cpuCore>
+	<cpuCore>3</cpuCore>
+	<filePath>C:\IdeaProjects\2KOLPlayersCount</filePath>
+	<fileName>球员属性</fileName>
+	<fileExt>csv</fileExt>
 </root>
